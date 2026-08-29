@@ -24,7 +24,7 @@ hf-stroke-transcriptomic-meta-analysis/
 │   ├── GSE116250_sample_metadata.csv
 │   ├── GSE120852_sample_metadata.csv
 │   ├── GSE135055_sample_metadata.csv
-│   └── gene_annotation.csv            # GeneID → Symbol lookup used in run_deseq2.R
+│   └── Human.GRCh38.p13.annot.tsv     # NCBI GRCh38.p13 annotation file — Entrez GeneID → Symbol, used in run_deseq2.R
 ├── 02_deseq2/
 │   ├── scripts/
 │   │   └── run_deseq2.R               # Runs DESeq2 across all 7 datasets, split by disease group
@@ -126,10 +126,6 @@ R (GEOquery, DESeq2) · Excel (PI/composite scoring) · Python (pandas, scikit-l
 - Single-cell/spatial transcriptomics to resolve cell-type-specific drivers
 - Mendelian randomization + prospective cohorts for causal validation of hub genes
 - Convert the Excel scoring step into a reusable script for full pipeline automation
-
-## Authors
-
-Mehak Khemka (2509318) · Anusree P (2500146) — PGDBI 2025–26
 
 ## References
 
